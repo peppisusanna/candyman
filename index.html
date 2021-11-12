@@ -31,10 +31,10 @@ nav {
 }
 nav ul {
   list-style-type: none;
-  padding: 0;
+  padding: ;
   color: #4E4141;
   font-family: courier;
-  font-size: 16px;
+  font-size: 10px;
 }
 section::after {
   content: "";
@@ -46,18 +46,18 @@ article {
   padding: 20px;
   width: 50%;
   background-color: #f1f1f1;
-  height: 300px;
+  height: 400px;
 }
 aside {
   float: left;
   width: 50%;
-  height: 300px;
+  height: 400px;
   background: #FCE5CD;
   padding: 20px;
 }
 footer {
   background-color: #786464;
-  padding: 10px;
+  padding: 30px;
   text-align: center;
   color: white;
 }
@@ -66,6 +66,12 @@ footer {
     width: 100%;
     height: auto;
   }
+}
+.patukat {
+font-size: 20px;
+}
+.laatikot{
+font-size: 28px;
 }
 </style>
 </head>
@@ -86,14 +92,54 @@ footer {
   </nav>
   </section>
   <article>
-    <h2>Worlds Number 1 Candy</h2>
-    <p>Snickers. Snickers is not only best-selling candy bar in the U.S., it's also the best-selling worldwide.</p>
+    <fieldset>
+      <legend class="laatikot">Number 1</legend>
+    <p>Snickers is not only best-selling candy bar in the U.S., it's also the best-selling worldwide.<br/>
+    Me meyself, not a huge fan. I enjoy a Jim bar, for example. Surely it's an acquired taste.<br/>
+    <br/><br/></p>
+    </fieldset>
   </article>
   <aside>
-      <h3>Tähän kai jotain kanssa..</h3>
-      <p> hmm </p>
+  <fieldset>
+    <legend class="laatikot">What's your favourite?</legend>
+    <div>
+        <label class="patukat">Chocolate bars</label>
+    </div>
+    <div>
+        <input list="color-list" type="text">
+        <datalist id="color-list">
+            <option value="Snickers">
+                <option value="Mars">
+                <option value="Twix">
+                <option value="Bounty">
+                <option value="Geisha">
+                <option value="Tupla">
+                <option value="Pätkis">
+                <option value="Jim">
+                </datalist>
+    </diviv>
+ 
+                    <br/>
+
+                <div>
+                    <label class="patukat">Candy</label>
+                </div>
+        <div>
+            <input list="color-list" type="text">
+            <datalist id="color-list">
+                <option value="Aakkoset">
+                    <option value="TV Mix">
+                    <option value="TuttiFrutti">
+                    <option value="Ässä Mix">
+                    <option value="Missä Äx">
+                    <option value="Lauantai">
+                    <option value="Remix">
+                    </datalist>
+        </div>
+<br/>
+  </fieldset>
   </aside>
-<footer>
+<footer><br/>
   <p>Footer</p>
 </footer>
 </body>
